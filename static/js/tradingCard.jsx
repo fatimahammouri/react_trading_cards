@@ -85,7 +85,7 @@ const tradingCardData = [
     );
 
   }
-
+  
 // mount just ONE thing onto the page:
 // one TradingCardContainer component
 ReactDOM.render(
