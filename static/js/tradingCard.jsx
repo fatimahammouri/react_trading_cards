@@ -4,7 +4,7 @@ const tradingCardData = [
   {
     name: 'Balloonicorn',
     skill: 'video games',
-    imgUrl: '/static/img/balloonicorn.jpg'
+    imgUrl: '/static/img/balloonicorn.jpg',
   },
 
   {
@@ -84,8 +84,16 @@ const tradingCardData = [
       <React.Fragment> {tradingCards} </React.Fragment>
     );
 
+    // a way to do it with map
+    // return(
+    // <React.Fragment>
+    //   {tradingCardData.map(currentCard =>
+    //       <p key={currentCard.id}>{currentCard.name}   {currentCard.skill}</p>
+    //   )}
+    // </React.Fragment>
+    // )
   }
-  
+
 // mount just ONE thing onto the page:
 // one TradingCardContainer component
 ReactDOM.render(
